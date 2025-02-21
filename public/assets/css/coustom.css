@@ -1,0 +1,55 @@
+.personal-details{
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap:10px;
+}
+.personal-details p{
+    font-size: 16px;
+}
+.personal-details p i{
+    margin-right: 10px;
+}
+
+.commone{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.card_det{
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    flex-direction: column;
+}
+.card_det h2{
+    text-transform: capitalize;
+}
+
+.formbox{
+    padding: 10px;
+    border-bottom: #ccc solid 1px;
+}
+
+.formbox h3{
+    font-size: 18px;
+}
+
+.card_box{
+    padding: 10px;
+/*    padding-bottom: 40px;*/
+    border-bottom: 1px dashed #ccc;
+}
+.card_box h4{
+    margin-top: 10px;
+    font-size: 18px;
+}
+.card_box h5{
+    text-transform: capitalize;
+    font-weight: 300;
+    font-size: 16px;
+}

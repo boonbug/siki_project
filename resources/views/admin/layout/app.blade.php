@@ -49,9 +49,9 @@
         <div class="page-body-wrapper">
             @yield('admin_sidebar')
             <div class="page-body">
-                <div class="container-fluid">
+
                     @yield('admin_main_content')
-                </div>
+
             </div>
             @yield('admin_footer')
         </div>

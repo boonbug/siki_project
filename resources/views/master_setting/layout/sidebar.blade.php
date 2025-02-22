@@ -1,4 +1,4 @@
- @section('admin_sidebar')
+ {{-- @section('admin_sidebar')
         <div class="overlay"></div>
         <aside class="page-sidebar" data-sidebar-layout="stroke-svg">
             <div class="left-arrow" id="left-arrow">
@@ -219,4 +219,4 @@
                 </svg>
             </div>
         </aside>
-@endsection
+@endsection --}}

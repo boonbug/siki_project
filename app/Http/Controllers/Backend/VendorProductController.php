@@ -5,26 +5,48 @@ namespace App\Http\Controllers\Backend;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class VendorProductAdditionalChargeController extends Controller
+class VendorProductController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    // index page
+    public function containerDetailsView()
     {
-        //
+        return view('admin.vender_product.container_details.index');
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
+    public function conventionalChargesView()
     {
-        //
+        return view('admin.vender_product.conventional_charges.index');
+    }
+    public function additionalChargeView()
+    {
+        return view('admin.vender_product.additional_charge.index');
+    }
+    public function operationChargeView()
+    {
+        return view('admin.vender_product.operation_charges.index');
+    }
+
+    // create page
+    public function containerDetailsCreate()
+    {
+        return view('admin.vender_product.container_details.create');
+    }
+    public function conventionalChargesCreate()
+    {
+        return view('admin.vender_product.conventional_charges.create');
+    }
+    public function additionalChargeCreate()
+    {
+        return view('admin.vender_product.additional_charge.create');
+    }
+    public function operationChargeCreate()
+    {
+        return view('admin.vender_product.operation_charges.create');
     }
 
     /**

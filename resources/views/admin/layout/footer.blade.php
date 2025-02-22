@@ -6,11 +6,11 @@
           <p class="mb-0">Copyright 2024 © Boonbug</p>
         </div>
         <div class="col-md-6">
-          <p class="float-end mb-0">Hand crafted &amp; made with
+          {{-- <p class="float-end mb-0">Hand crafted &amp; made with
             <svg class="svg-color footer-icon">
               <use href="{{ asset('assets/svg/iconly-sprite.svg#footer-heart') }}"></use>
             </svg>
-          </p>
+          </p> --}}
         </div>
       </div>
     </div>

@@ -5,9 +5,11 @@
 
 @section('title', 'Dashboard')
 @section('admin_main_content')
-<div class="row page-title">
-    <div class="col-sm-6">
-        <h3> {{ slugTitle('dashboard') }} </h3>
+<div class="container-fluid">
+    <div class="row page-title">
+        <div class="col-sm-6">
+            <h3> {{ slugTitle('dashboard') }} </h3>
+        </div>
     </div>
 </div>
 @endsection

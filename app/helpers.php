@@ -5,7 +5,8 @@ if (!function_exists('slugTitle')) {
     {
         if($string != "")
         {
-            return Str::ucfirst($string);
+            return ucwords($string);
         }
     }
 }
+

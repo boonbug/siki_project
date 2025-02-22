@@ -14,7 +14,7 @@ class RegistryController extends Controller
      */
     public function index()
     {
-        //
+
     }
 
     /**

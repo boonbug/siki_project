@@ -1,4 +1,4 @@
-<!-- <div class="loader-wrapper">
+{{-- <!-- <div class="loader-wrapper">
     <div class="loader"></div>
 </div> -->
 
@@ -267,7 +267,7 @@
                             <ul>
                                 <li class="d-flex">
                                     <svg class="svg-color">
-                                        <use href="assets/svg/iconly-sprite.svg#Profile"></use>
+                                        <use href="{{ asset('assets/svg/iconly-sprite.svg#Profile') }}"></use>
                                     </svg><a class="ms-2" href="user-profile.html">Account</a>
                                 </li>
                                 <li class="d-flex">
@@ -292,4 +292,4 @@
             </div>
         </div>
     </header>
-@endsection
+@endsection --}}

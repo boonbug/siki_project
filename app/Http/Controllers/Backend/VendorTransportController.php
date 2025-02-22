@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Backend;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class VendorProductOperationChargeController extends Controller
+class VendorTransportController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class VendorProductOperationChargeController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.vender_transporters.index');
     }
 
     /**
@@ -24,7 +24,7 @@ class VendorProductOperationChargeController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.vender_transporters.create');
     }
 
     /**

@@ -4,7 +4,9 @@
 
 @section('admin_header')
     <header class="page-header row">
-        <div class="logo-wrapper d-flex align-items-center col-auto"><a href="index.html"><img class="for-light" src="{{ asset('assets/images/logo/logo.png') }}" alt="logo"><img class="for-dark" src="{{ asset('assets/images/logo/dark-logo.png') }}" alt="logo"></a><a class="close-btn" href="javascript:void(0)">
+        <div class="logo-wrapper d-flex align-items-center col-auto"><a href="index.html"><img class="for-light" src="{{ asset('assets/images/logo/logo.png') }}" alt="logo">
+            <img class="for-dark" src="{{ asset('assets/images/logo/dark-logo.png') }}" alt="logo"></a>
+            <a lass="close-btn" href="javascript:void(0)">
                 <div class="toggle-sidebar">
                     <div class="line"></div>
                     <div class="line"></div>
@@ -35,7 +37,8 @@
                         </div>
                     </li>
                     <li class="profile-dropdown custom-dropdown">
-                        <div class="d-flex align-items-center"><img src="{{ asset('assets/images/profile.png') }}" alt="">
+                        <div class="d-flex align-items-center">
+                            <img src="{{ asset('assets/images/profile.png') }}" alt="">
                             <div class="flex-grow-1">
                                 <h5>Wade Warren</h5><span>UI Designer</span>
                             </div>
@@ -44,7 +47,7 @@
                             <ul>
                                 <li class="d-flex">
                                     <svg class="svg-color">
-                                        <use href="assets/svg/iconly-sprite.svg#Profile"></use>
+                                        <use href="{{ asset('assets/svg/iconly-sprite.svg#Profile') }}"></use>
                                     </svg><a class="ms-2" href="user-profile.html">Account</a>
                                 </li>
                             </ul>

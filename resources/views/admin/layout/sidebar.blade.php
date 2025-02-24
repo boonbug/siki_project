@@ -51,6 +51,33 @@
                           </ul>
                     </li>
 
+                    <li class="sidebar-list">
+                        <a class="sidebar-link" href="{{ route('admin.index') }}">
+                            <svg class="stroke-icon">
+                                <use href="{{ asset('assets/svg/iconly-sprite.svg#Home') }}"></use>
+                            </svg><span>Profile</span>
+                            <svg >
+                            </svg></a>
+                    </li>
+
+                    <li class="sidebar-list">
+                        <a class="sidebar-link" href="{{ route('department.index') }}">
+                            <svg class="stroke-icon">
+                                <use href="{{ asset('assets/svg/iconly-sprite.svg#Home') }}"></use>
+                            </svg><span>Master Setting</span>
+                            <svg >
+                            </svg></a>
+                    </li>
+
+                    <li class="sidebar-list">
+                        <a class="sidebar-link" href="{{ route('logout') }}">
+                            <svg class="stroke-icon">
+                                <use href="{{ asset('assets/svg/iconly-sprite.svg#Home') }}"></use>
+                            </svg><span>Logout</span>
+                            <svg >
+                            </svg></a>
+                    </li>
+
                     <li class="line"> </li>
                 </ul>
             </div>

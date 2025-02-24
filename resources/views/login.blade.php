@@ -35,11 +35,13 @@
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
     <link id="color" rel="stylesheet" href="{{ asset('assets/css/color-1.css') }}" media="screen">
+    {{-- toaster css --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.css" integrity="sha512-oe8OpYjBaDWPt2VmSFR+qYOdnTjeV9QPLJUeqZyprDEQvQLJ9C5PCFclxwNuvb/GQgQngdCXzKSFltuHD3eCxA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <!-- tap to top-->
     <div class="tap-top">
-      <svg class="feather">
+      <svg class="feather">7
         <use href="{{ asset('assets/svg/feather-icons/dist/feather-sprite.svg#arrow-up')}}"></use>
       </svg>
     </div>
@@ -95,6 +97,17 @@
       <!-- customizer-->
       <!-- custom script -->
       <script src="{{ asset('assets/js/script.js') }}"></script>
+
+      {{-- toaster js --}}
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js" integrity="sha512-lbwH47l/tPXJYG9AcFNoJaTMhGvYWhVM9YI43CT+uteTRRaiLCui8snIgyAN8XWgNjNhCqlAUdzZptso6OCoFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     </div>
   </body>
+
+  <script type="text/javascript">
+    @if(Session::has('error'))
+    toastr.error("{{ Session::get('error') }}");
+    @endif
+    </script>
+
 </html>

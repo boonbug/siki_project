@@ -2,7 +2,6 @@
 @extends('admin.layout.footer')
 @extends('admin.layout.header')
 @extends('admin.layout.sidebar')
-
 @section('title', 'Dashboard')
 @section('admin_main_content')
 <div class="container-fluid">
@@ -12,4 +11,15 @@
         </div>
     </div>
 </div>
+@endsection
+
+@section('script')
+<script type="text/javascript">
+    @if(Session::has('success'))
+        toastr.success("{{ Session::get('success') }}");
+    @endif
+    @if(Session::has('error'))
+        toastr.error("{{ Session::get('error') }}");
+    @endif
+</script>
 @endsection

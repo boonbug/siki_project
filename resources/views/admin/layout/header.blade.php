@@ -28,6 +28,12 @@
                         </div>
                     </li>
                     <!-- Notification menu-->
+
+                    <li class="custom-dropdown"><a href="javascript:void(0)">
+                        <div class="text-center col-12 col-sm-6 col-md-12" style="margin-left:-85px;">
+                            <a href="{{ route('department.index') }}" class="btn m-1 btn-secondary" data-bs-toggle="tooltip" title="btn btn-secondary">Master Setting</a>
+                          </div>
+                    </li>
                     <li class="custom-dropdown"><a href="javascript:void(0)">
                             <svg class="svg-color circle-color">
                                 <use href="{{ asset('assets/svg/iconly-sprite.svg#Bell') }}"></use>
@@ -38,9 +44,14 @@
                     </li>
                     <li class="profile-dropdown custom-dropdown">
                         <div class="d-flex align-items-center">
-                            <img src="{{ asset('assets/images/profile.png') }}" alt="">
+                            @if(Auth::user()->user_image != "")
+                                <img src="{{ asset('storage/Admin_profile/' . Auth::user()->user_image) }}" alt="User Image" height="60px;">
+                            @else
+                                <img alt="" src="{{ asset('assets/images/avatar/1.jpg') }}"><
+                            @endif
                             <div class="flex-grow-1">
-                                <h5>Wade Warren</h5><span>UI Designer</span>
+                                <h5>{{ Auth::user()->company_name }}</h5>
+                                {{-- <h5>Wade Warren</h5><span>UI Designer</span> --}}
                             </div>
                         </div>
                         <div class="custom-menu overflow-hidden">

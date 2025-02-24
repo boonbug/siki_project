@@ -14,7 +14,7 @@ class CPSCodeController extends Controller
      */
     public function index()
     {
-        //
+        return view('master_setting.cps_code.index');
     }
 
     /**

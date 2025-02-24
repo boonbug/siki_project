@@ -15,6 +15,8 @@ return new class extends Migration
     {
         Schema::create('containers', function (Blueprint $table) {
             $table->id();
+            $table->string('container');
+            $table->integer('price');
             $table->timestamps();
         });
     }

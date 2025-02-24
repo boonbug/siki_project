@@ -15,6 +15,8 @@ return new class extends Migration
     {
         Schema::create('vats', function (Blueprint $table) {
             $table->id();
+            $table->string('vat');
+            $table->float('rate', 10, 2);
             $table->timestamps();
         });
     }

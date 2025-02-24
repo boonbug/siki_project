@@ -14,7 +14,7 @@ class DepartmentController extends Controller
      */
     public function index()
     {
-        //
+        return view('master_setting.user_department.department.index');
     }
 
     /**
@@ -22,11 +22,6 @@ class DepartmentController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-        //
-    }
-
     /**
      * Store a newly created resource in storage.
      *

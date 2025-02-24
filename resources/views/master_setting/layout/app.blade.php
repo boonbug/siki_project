@@ -50,8 +50,7 @@
             @yield('master_sidebar')
             <div class="page-body">
 
-                    @yield('master_contant')
-
+                @yield('master_contant')
             </div>
             @yield('admin_footer')
         </div>

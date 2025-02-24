@@ -24,11 +24,11 @@
                          <use href="{{ asset('assets/svg/feather-sprite.svg#chevron-right') }}"></use>
                      </svg></a>
                  <ul class="sidebar-submenu">
-                     <li><a href="department.php">
+                     <li><a href="{{ route('department.index') }}">
                              <svg class="svg-menu">
                                  <use href="{{ asset('assets/svg/iconly-sprite.svg#right-3') }}"></use>
                              </svg>Department</a></li>
-                     <li><a href="workout-role.php">
+                     <li><a href="{{ route('workoutrole.index') }}">
                              <svg class="svg-menu">
                                  <use href="{{ asset('assets/svg/iconly-sprite.svg#right-3') }}"></use>
                              </svg>workout role</a></li>
@@ -44,11 +44,11 @@
                          <use href="{{ asset('assets/svg/feather-sprite.svg#chevron-right') }}"></use>
                      </svg></a>
                  <ul class="sidebar-submenu">
-                     <li><a href="vat.php">
+                     <li><a href="{{ route('vat.index') }}">
                              <svg class="svg-menu">
                                  <use href="{{ asset('assets/svg/iconly-sprite.svg#right-3') }}"></use>
                              </svg>VAT</a></li>
-                     <li><a href="container.php">
+                     <li><a href="{{ route('container.index') }}">
                              <svg class="svg-menu">
                                  <use href="{{ asset('assets/svg/iconly-sprite.svg#right-3') }}"></use>
                              </svg>Container</a></li>
@@ -61,18 +61,18 @@
                                  <use href="{{ asset('assets/svg/feather-icons/dist/feather-sprite.svg#chevron-right') }}"></use>
                              </svg></a>
                          <ul class="according-submenu" style="display: none;">
-                             <li><a href="tier-1-local.php">
+                             <li><a href="{{ route('first_tier_local.index') }}">
                                      tier 1 local</a></li>
-                             <li><a href="error-page2.html">
+                             <li><a href="{{ route('second_tier_local.index') }}">
                                      tier 2 local</a></li>
-                             <li><a href="error-page3.html">
+                             <li><a href="{{ route('first_tier_transit.index') }}">
                                      tier 1 transit</a></li>
-                             <li><a href="error-page4.html">
+                             <li><a href="{{ route('second_tier_transit.index') }}">
                                      tier 2 transit</a></li>
 
                          </ul>
                      </li>
-                     <li><a href="unit-of-measure.php">
+                     <li><a href="{{ route('unit_of_measure.index') }}">
                              <svg class="svg-menu">
                                  <use href="{{ asset('assets/svg/iconly-sprite.svg#right-3') }}"></use>
                              </svg>Unit of Measure</a></li>
@@ -87,10 +87,26 @@
                          <use href="{{ asset('assets/svg/feather-sprite.svg#chevron-right') }}"></use>
                      </svg></a>
                  <ul class="sidebar-submenu">
-                     <li><a href="local.php">
+                     <li><a href="{{ route('local_document.index') }}">
                              <svg class="svg-menu">
                                  <use href="{{ asset('assets/svg/iconly-sprite.svg#right-3') }}"></use>
                              </svg>local</a></li>
+                     <li><a href="{{ route('transit_document.index') }}">
+                             <svg class="svg-menu">
+                                 <use href="{{ asset('assets/svg/iconly-sprite.svg#right-3') }}"></use>
+                             </svg>Transit</a></li>
+                     <li><a href="{{ route('dg_cargo_document.index') }}">
+                             <svg class="svg-menu">
+                                 <use href="{{ asset('assets/svg/iconly-sprite.svg#right-3') }}"></use>
+                             </svg>DG Cargo</a></li>
+                     <li><a href="{{ route('reefer_document.index') }}">
+                             <svg class="svg-menu">
+                                 <use href="{{ asset('assets/svg/iconly-sprite.svg#right-3') }}"></use>
+                             </svg>Reefer</a></li>
+                     <li><a href="{{ route('direct_loading_document.index') }}">
+                             <svg class="svg-menu">
+                                 <use href="{{ asset('assets/svg/iconly-sprite.svg#right-3') }}"></use>
+                             </svg>Direct Loading</a></li>
                  </ul>
              </li>
              <li class="sidebar-list">
@@ -102,7 +118,7 @@
                          <use href="{{ asset('assets/svg/feather-sprite.svg#chevron-right') }}"></use>
                      </svg></a>
                  <ul class="sidebar-submenu">
-                     <li><a href="shiping.php">
+                     <li><a href="{{ route('shipping.index') }}">
                              <svg class="svg-menu">
                                  <use href="{{ asset('assets/svg/iconly-sprite.svg#right-3') }}"></use>
                              </svg>shipping</a></li>
@@ -118,11 +134,11 @@
                          <use href="{{ asset('assets/svg/feather-sprite.svg#chevron-right') }}"></use>
                      </svg></a>
                  <ul class="sidebar-submenu">
-                     <li><a href="country.php">
+                     <li><a href="{{ route('country.index') }}">
                              <svg class="svg-menu">
                                  <use href="{{ asset('assets/svg/iconly-sprite.svg#right-3') }}"></use>
                              </svg>country </a></li>
-                     <li><a href="currency.php">
+                     <li><a href="{{ route('currency.index') }}">
                              <svg class="svg-menu">
                                  <use href="{{ asset('assets/svg/iconly-sprite.svg#right-3') }}"></use>
                              </svg>currency </a></li>
@@ -137,63 +153,13 @@
                          <use href="{{ asset('assets/svg/feather-sprite.svg#chevron-right') }}"></use>
                      </svg></a>
                  <ul class="sidebar-submenu">
-                     <li><a href="cps-codes.php">
+                     <li><a href="{{ route('cps_code.index') }}">
                              <svg class="svg-menu">
                                  <use href="{{ asset('assets/svg/iconly-sprite.svg#right-3') }}"></use>
                              </svg>CPS codes </a></li>
                  </ul>
              </li>
-             <li class="sidebar-list">
-                 <a class="sidebar-link" href="javascript:void(0)">
-                     <svg class="stroke-icon">
-                         <use href="{{ asset('assets/svg/iconly-sprite.svg#Home') }}"></use>
-                     </svg><span>Vender</span>
 
-                     <svg class="feather">
-                         <use href="{{ asset('assets/svg/feather-sprite.svg#chevron-right') }}"></use>
-                     </svg></a>
-                 <ul class="sidebar-submenu">
-                     <li>
-                         <a href="add-vender.php">
-                             <svg class="svg-menu">
-                                 <use href="{{ asset('assets/svg/iconly-sprite.svg#right-3') }}"></use>
-                             </svg>Add Vender </a>
-                     </li>
-                      <li>
-                         <a href="vender.php">
-                             <svg class="svg-menu">
-                                 <use href="{{ asset('assets/svg/iconly-sprite.svg#right-3') }}"></use>
-                             </svg>Add Profile </a>
-                          <a href="add-vender-product.php">
-                             <svg class="svg-menu">
-                                 <use href="{{ asset('assets/svg/iconly-sprite.svg#right-3') }}"></use>
-                             </svg>Add Vender Product </a>
-                     </li>
-                 </ul>
-             </li>
-             <li class="sidebar-list">
-                <a class="sidebar-link" href="javascript:void(0)">
-                     <svg class="stroke-icon">
-                         <use href="{{ asset('assets/svg/iconly-sprite.svg#Home') }}"></use>
-                     </svg><span>Staff</span>
-                     <svg class="feather">
-                         <use href="{{ asset('assets/svg/feather-sprite.svg#chevron-right') }}"></use>
-                     </svg></a>
-                 <ul class="sidebar-submenu">
-                     <li>
-                         <a href="add-staff.php">
-                             <svg class="svg-menu">
-                                 <use href="{{ asset('assets/svg/iconly-sprite.svg#right-3') }}"></use>
-                             </svg>Add Staff </a>
-                     </li>
-                      <li>
-                         <a href="staff-profile.php">
-                             <svg class="svg-menu">
-                                 <use href="{{ asset('assets/svg/iconly-sprite.svg#right-3') }}"></use>
-                             </svg>Staff Profile </a>
-                     </li>
-                 </ul>
-             </li>
          </ul>
      </div>
      <div class="right-arrow" id="right-arrow">

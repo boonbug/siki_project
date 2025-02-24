@@ -14,7 +14,7 @@ class WorkoutRoleController extends Controller
      */
     public function index()
     {
-        //
+        return view('master_setting.user_department.workout_role.index');
     }
 
     /**
@@ -24,7 +24,7 @@ class WorkoutRoleController extends Controller
      */
     public function create()
     {
-        //
+        return view('master_setting.user_department.workout_role.create');
     }
 
     /**

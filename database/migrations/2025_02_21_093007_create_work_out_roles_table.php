@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('work_out_roles', function (Blueprint $table) {
             $table->id();
+            $table->string('role_name');
             $table->timestamps();
         });
     }

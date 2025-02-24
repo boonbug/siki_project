@@ -14,7 +14,7 @@ class ShippingController extends Controller
      */
     public function index()
     {
-        //
+        return view('master_setting.shipping.index');
     }
 
     /**

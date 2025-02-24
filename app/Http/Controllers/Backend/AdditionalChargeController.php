@@ -12,9 +12,24 @@ class AdditionalChargeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function firstTierLocalView()
     {
-        //
+        return view('master_setting.system_utilites.additional_charge.first_tier_local');
+    }
+
+    public function firstTierTransitView()
+    {
+        return view('master_setting.system_utilites.additional_charge.first_tier_transit');
+    }
+
+    public function secondTierLocalView()
+    {
+        return view('master_setting.system_utilites.additional_charge.second_tier_local');
+    }
+
+    public function secondTierTransitView()
+    {
+        return view('master_setting.system_utilites.additional_charge.second_tier_transit');
     }
 
     /**

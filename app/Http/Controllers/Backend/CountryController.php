@@ -14,7 +14,7 @@ class CountryController extends Controller
      */
     public function index()
     {
-        //
+        return view('master_setting.country_currenry.country_index');
     }
 
     /**

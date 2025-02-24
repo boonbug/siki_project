@@ -14,7 +14,7 @@ class ContainerController extends Controller
      */
     public function index()
     {
-        //
+        return view('master_setting.system_utilites.container.index');
     }
 
     /**

@@ -5,12 +5,23 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\Backend\VendorController;
 use App\Http\Controllers\Backend\VendorProductController;
 use App\Http\Controllers\Backend\VendorShippingContoller;
-use App\Http\Controllers\Backend\VendorTransportController;
+use App\Http\Controllers\Backend\DepartmentController;
+use App\Http\Controllers\Backend\WorkoutRoleController;
+use App\Http\Controllers\Backend\VatController;
+use App\Http\Controllers\Backend\ContainerController;
+use App\Http\Controllers\Backend\AdditionalChargeController;
+use App\Http\Controllers\Backend\UnitOfMeasureController;
+use App\Http\Controllers\Backend\DocumentController;
+use App\Http\Controllers\Backend\ShippingController;
+use App\Http\Controllers\Backend\CountryController;
+use App\Http\Controllers\Backend\CurrencyController;
+use App\Http\Controllers\Backend\CPSCodeController;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
+// Auth Route
 Route::controller(AuthController::class)->group(function(){
     Route::get('login', 'loginView')->name('loginView');
     Route::post('checkLogin', 'checkLogin')->name('checkLogin');
@@ -50,10 +61,33 @@ Route::controller(VendorShippingContoller::class)->group(function(){
     Route::get('sco_additiobal_demmurage', 'SCOAdditionalDemmurageView')->name('SCOAdditionalDemmurageView');
     Route::get('sco_additiobal_demmurage_create', 'SCOAdditionalDemmurageCreate')->name('SCOAdditionalDemmurageCreate');
 });
+// end vendor route
+
+Route::controller(AdditionalChargeController::class)->group(function(){
+    Route::get('firstTierLocalView', 'firstTierLocalView')->name('first_tier_local.index');
+    Route::get('firstTierTransitView', 'firstTierTransitView')->name('first_tier_transit.index');
+    Route::get('secondTierLocalView', 'secondTierLocalView')->name('second_tier_local.index');
+    Route::get('secondTierTransitView', 'secondTierTransitView')->name('second_tier_transit.index');
+});
+
+Route::controller(DocumentController::class)->group(function(){
+    Route::get('localDocumentView', 'localDocumentView')->name('local_document.index');
+    Route::get('transitDocumentView', 'transitDocumentView')->name('transit_document.index');
+    Route::get('dgCargoDocumentView', 'dgCargoDocumentView')->name('dg_cargo_document.index');
+    Route::get('reeferDocumentView', 'reeferDocumentView')->name('reefer_document.index');
+    Route::get('directLoadingDocumentView', 'directLoadingDocumentView')->name('direct_loading_document.index');
+});
+
 // resource
 Route::resource('vender', VendorController::class);
 Route::resource('vender_transporter', VendorTransportController::class);
-
-
-
+Route::resource('department', DepartmentController::class);
+Route::resource('workoutrole', WorkoutRoleController::class);
+Route::resource('vat', VatController::class);
+Route::resource('container', ContainerController::class);
+Route::resource('unit_of_measure', UnitOfMeasureController::class);
+Route::resource('shipping', ShippingController::class);
+Route::resource('country', CountryController::class);
+Route::resource('currency', CurrencyController::class);
+Route::resource('cps_code', CPSCodeController::class);
 

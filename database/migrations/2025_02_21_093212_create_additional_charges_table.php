@@ -15,6 +15,9 @@ return new class extends Migration
     {
         Schema::create('additional_charges', function (Blueprint $table) {
             $table->id();
+            $table->string('days');
+            $table->integer('price');
+            $table->integer('tier_id');
             $table->timestamps();
         });
     }

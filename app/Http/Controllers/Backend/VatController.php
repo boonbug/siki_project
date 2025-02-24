@@ -14,7 +14,7 @@ class VatController extends Controller
      */
     public function index()
     {
-        //
+        return view('master_setting.system_utilites.vat.index');
     }
 
     /**
@@ -22,10 +22,7 @@ class VatController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-        //
-    }
+
 
     /**
      * Store a newly created resource in storage.
